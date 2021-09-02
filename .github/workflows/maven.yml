@@ -25,8 +25,7 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Test Path
-      run: pwd
-      run: ls -l target/
+      run: ls -l target/ | pwd
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v1
     - name: Set up Docker Buildx
