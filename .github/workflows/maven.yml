@@ -35,6 +35,8 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
     - name: Test Path
       run: pwd
+    - name: Test Path1
+      run: ls -l target/*
     - name: Build and push
       id: docker_build
       uses: docker/build-push-action@v2
