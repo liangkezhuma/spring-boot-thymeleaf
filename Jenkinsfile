@@ -5,4 +5,5 @@ pipeline {
         echo 'time to go'
       }
     }
+  }
 }
